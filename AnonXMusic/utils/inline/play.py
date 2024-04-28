@@ -66,7 +66,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["° υρ∂αтє °"], url="https://t.me/YukkiSongUpdate")],
+        [InlineKeyboardButton(text=_["update"], url="https://t.me/YukkiSongUpdate")],
     ]
     return buttons
 
@@ -80,7 +80,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="⛷", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="🛑", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["° υρ∂αтє °"], url="https://t.me/YukkiSongUpdate")],
+        [InlineKeyboardButton(text=_["update"], url="https://t.me/YukkiSongUpdate")],
     ]
     return buttons
 
