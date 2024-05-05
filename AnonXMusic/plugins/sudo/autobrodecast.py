@@ -6,7 +6,7 @@ from config import LOGGER_ID
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 AUTO_GCASTS = True
-
+AUTO_GCAST = True
 START_IMG_URLS = "https://graph.org/file/58e9ada3e0cbae2268306.jpg"
 
 MESSAGES = f"""**➜ α мυѕιᴄ ρℓαуєʀ вσт ωιтн ѕσмє α∂ναиᴄє∂ fєαтυʀєѕ
