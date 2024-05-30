@@ -1,7 +1,7 @@
 import asyncio
 import datetime
 from AnonXMusic import app
-from AnonXMusic.utils.database import get_served_users
+from AnonXMusic.utils.database import get_served_chats
 from config import LOGGER_ID
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -34,7 +34,7 @@ async def send_text_once():
 
 async def send_message_to_chats():
     try:
-        chats = await get_served_users()
+        chats = await get_served_chats()
 
         for chat_info in chats:
             chat_id = chat_info.get('chat_id')
