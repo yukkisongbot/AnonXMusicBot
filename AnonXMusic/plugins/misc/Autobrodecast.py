@@ -9,7 +9,7 @@ AUTO_GCASTS = True
 AUTO_GCAST = True
 START_IMG_URLS = "https://graph.org/file/6a586f1dbe39aaffdf813.jpg"
 
-MESSAGES = f"""‣  тнιѕ ιѕ {app.mention}
+MESSAGES = f"""‣  тнιѕ ιѕ @TprinceMusicBot
 
 ➜ α мυѕιᴄ ρℓαуєʀ вσт ωιтн ѕσмє α∂ναиᴄє∂ fєαтυʀєѕ."""
 
