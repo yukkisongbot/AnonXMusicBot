@@ -8,20 +8,22 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 AUTO_GCASTS = True
 AUTO_GCAST = True
-START_IMG_URLS = "https://graph.org/file/497d715b03115857db6d8.jpg"
+START_IMG_URLS = "https://telegra.ph/file/9a865f597b9b1cf5344bc.jpg"
 
-MESSAGES = f"""‣  тнιѕ ιѕ {app.mention}
+MESSAGES = f"""Paid Promotion Available Via Music Bot
 
-➜ α мυѕιᴄ ρℓαуєʀ вσт ωιтн ѕσмє α∂ναиᴄє∂ fєαтυʀєѕ."""
+Promote anything you want on our platform with best plans and proper services.
+Daily , Weekly , Monthly plans available for big businesses at best possible conditions.
+
+Our Bot Link  - @Yukkisongbot  """
 
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙰𝚍𝚍 𝙼𝚎", url=f"https://t.me/{app.mention}?startgroup=true")]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("ƈσɳƚαƈƚ ɱҽ", url=f"https://t.me/JK_ABHISHEK")]])
 
 
 
 TEXT = """ᴀᴜᴛᴏ ɢᴄᴀsᴛ ɪs ᴇɴᴀʙʟᴇᴅ sᴏ ᴀᴜᴛᴏ ɢᴄᴀsᴛ/ʙʀᴏᴀᴅᴄᴀsᴛ ɪs ᴅᴏɪɴ ɪɴ ᴀʟʟ ᴄʜᴀᴛs ᴄᴏɴᴛɪɴᴜᴏᴜsʟʏ."""
 
-STICKER = "CAACAgUAAx0Ceb8wGwABAT6gZmjvohZ8mXC467d5eduIKVjcdqQAAlkFAAKPzQFXFqDoXf0tCBAeBA"
 async def send_text_once():
     try:
         await app.send_message(LOGGER_ID, TEXT)
@@ -36,7 +38,7 @@ async def send_message_to_chats():
             chat_id = chat_info.get('chat_id')
             if isinstance(chat_id, int): 
                 try:
-                    await app.send_sticker(chat_id, STICKER, reply_markup=BUTTONS)
+                    await app.send_photo(chat_id, photo=START_IMG_URLS, caption=MESSAGES, reply_markup=BUTTONS)
 
                 except FloodWait as e:
                     await asyncio.sleep(e.value)
@@ -51,7 +53,7 @@ async def send_message_to_users():
     try:
         for chat_id in served_users:
             try:
-                await app.send_sticker(chat_id, STICKER, reply_markup=BUTTONS)
+                await app.send_photo(chat_id, photo=START_IMG_URLS, caption=MESSAGES, reply_markup=BUTTONS)
             except FloodWait as e:
                 await asyncio.sleep(e.value)
             except Exception as e:
