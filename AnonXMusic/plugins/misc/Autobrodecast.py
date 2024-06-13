@@ -8,17 +8,14 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 AUTO_GCASTS = True
 AUTO_GCAST = True
-START_IMG_URLS = "https://telegra.ph/file/9a865f597b9b1cf5344bc.jpg"
+START_IMG_URLS = "https://telegra.ph/file/3b4f5e2f55879119926fd.jpg"
 
-MESSAGES = f"""Paid Promotion Available Via Music Bot
+MESSAGES = f"""‣  тнιѕ ιѕ {app.mention}
 
-Promote anything you want on our platform with best plans and proper services.
-Daily , Weekly , Monthly plans available for big businesses at best possible conditions.
-
-Our Bot Link  - @Yukkisongbot  """
+➜ α мυѕιᴄ ρℓαуєʀ вσт ωιтн ѕσмє α∂ναиᴄє∂ fєαтυʀєѕ."""
 
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("ƈσɳƚαƈƚ ɱҽ", url=f"https://t.me/JK_ABHISHEK")]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙰𝚍𝚍 𝙼𝚎", url=f"https://t.me/YukkiSongBot?startgroup=true")]])
 
 
 
